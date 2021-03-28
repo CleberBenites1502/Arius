@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+    background-image: url(background.jpg);
+    background-repeat: repeat-x;
+    /* background-color: rgba(229, 211, 82, 1.0); */
+}
+#meiuca{
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 20px auto;
+    width: 1200px;
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #7e8583;
+}
+h1, h2,p{
+/* shothand font - mãozinha 
+1º font-style   FORMATO italic ou normal
+2º font-weight  PESO - ligther normal bold bolder
+3º font-size    TAMANHO
+4º font-family  FAMILIA
+*/
+    font: italic lighter 3em 'Ubuntu Condensed', sans-serif;
+    margin: 25px 30px 10px 20px;
+}
+h2, p{
+    font: normal lighter 1em 'Ubuntu Condensed', sans-serif;
+    text-align: justify;
+}
+h2{
+    font-size: 1.5em;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+.menu{
+    font: normal lighter 1em 'Ubuntu Condensed', sans-serif;
+    background-color: rgba(3, 104, 255, 0.5);
+    color: black;
+    border-radius: 15px 15px 15px 15px ;
+    text-align: center;
+    margin: 10px auto;
+    width: 1200px;
+    height: auto;
+    box-shadow: 5px 5px 10px #7e8583;
+
+}
+.menu ul {
+    /*retirar os marcadores, as bolinhas*/
+    list-style: none;
+    /* texto ficar em maiusculo */
+    text-transform: uppercase;
+    /* ficar em linha */
+    /* display: inline-flex;  */
+}
+.menu li {
+    /* ficar em linha */
+    /* display: inline-block; */
+    display: inline-flex;
+}
+.menu ul li{
+    /* width: 50px;
+    margin: 30px; */
+    padding: 20px; 
+}
+.menu ul li a{
+    /*retira a linha subscribe*/
+    text-decoration: none;
+    color:rgb(252, 236, 21);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.menu ul li a:hover{
+    color:rgb(0, 0, 0);
+}
+.footer{
+    
+
+}
