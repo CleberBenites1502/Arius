@@ -83,3 +83,17 @@ a{
     
 
 }
+#processos{
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 20px auto;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #7e8583;
+}
+img#icone {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 9px;
+    width: 0.95em;
+}
