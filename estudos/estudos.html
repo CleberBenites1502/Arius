@@ -6,22 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
+        @font-face {
+            /* font-family: night;
+            src: url(font/Night.ttf)
+            format('truetype'); */
+            font-family: shine;
+            src:url(../font/shine.otf)
+            format('opentype');
+        }
         *{
             margin: 0px;
         }
         body{
-            /* background-image: url(css/estudos.jpg);  */
             background-color: rgb(0, 0, 0);
-            
-            /* background-repeat: no-repeat;
-            background-attachment: fixed; */
+          
         } 
         main{
-            margin: 100px;
+            margin: 40px;
             background-color: rgba(0, 0, 0, 0.445);
+            
             height: 1600px;
         }
+        h1,h2,p,pre{
+            font-size: 1em;
+        }
         h1{
+            font-family: shine;
             color:rgb(0, 183, 255)
         }
         h2{
@@ -33,33 +43,47 @@
         pre{
             color: rgb(255, 255, 255);
         }
-     
+        .fonte{
+            font-family: shine;
+            font-size: 2.5em;
+            color: deeppink;
+        }
+
     </style>
     <title>Estudos</title>
 </head>
 <body>
 <main>
-    <h1>Módulo 2 - fonts - google</h1>
+    <h1>Módulo 2 - fonts</h1>
     <h2>Site font googles e inserir o comando no CSS</h2>
     <p>Exemplo</p>
     <p><Pre>
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
     </Pre></p>
-    <h2>Site font instalada na máquina e seus formatos</h2>
+    <h2>Font instalada na máquina e formatos</h2>
     <p>Site exemplo https://www.dafont.com</p>
+    <p>Font Stranger back in the Night.ttf</p>
     <p><Pre>
         &lt;style&gt;
-        @ font-face { 
-            font-family: ;
-            src: url('love larry.otf') format:();
-
+        @font-face {
+            font-family: shine;
+            src:url(font/shine.otf)
+            format('opentype');
             /*
-            
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-att (Apple Advanced typography)
+            - svg
             */
         }
+        h1{
+            font-family:shine;
+        }
         &lt;/style&gt;
-        
     </Pre></p>
+    <p class="fonte">Nome da fonte - Brighly Crush</p>
 </main>
 </body>
 </html>
