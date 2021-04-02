@@ -18,26 +18,29 @@ body{
     border-radius: 5px;
     box-shadow: 5px 5px 10px #7e8583;
 }
-h1, h2,p{
+h1{
 /* shothand font - mãozinha 
 1º font-style   FORMATO italic ou normal
 2º font-weight  PESO - ligther normal bold bolder
 3º font-size    TAMANHO
 4º font-family  FAMILIA
 */
-    font: italic lighter 3em 'Ubuntu Condensed', sans-serif;
+    font: italic normal 3em -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
     margin: 25px 30px 10px 20px;
 }
 h2{
     font-size: 1.5em;
-}
-h2, p{
-    font: normal lighter 1em 'Ubuntu Condensed', sans-serif;
+    font: normal lighter 1em -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
     text-align: justify;
+    margin: 25px 30px 10px 20px;
     line-height: 0.9;
 }
+p{
+    font: normal normal 1em -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    margin: 20px;
+}
 .menu{
-    font: normal lighter 1em 'Ubuntu Condensed', sans-serif;
+    font: normal lighter 1em -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
     background-color: rgba(3, 104, 255, 0.5);
     border-radius: 15px 15px 15px 15px ;
     text-align: center;
