@@ -8,7 +8,7 @@
 }
 body{
     background-image: url(background.jpg);
-    background-repeat: repeat-x;
+    background-repeat:repeat-y;
 }
 #meiuca{
     background-color: rgba(255, 255, 255, 0.7);
@@ -52,26 +52,20 @@ p{
     font-weight: bold;
     text-transform: uppercase;
 }
-
 .menu ul li{
     padding: 20px; 
     margin: auto 35px;
     color: rgb(255, 255, 0);
     display: inline-flex;
-    
-    
 }
 .menu ul li :hover{
     color:rgb(255,255,255)
-    
 }
-
 #container{
     color: blue;
     padding: 30px;
     margin: 30px;
 }
-
 #baixar{
     color:red;
 }
