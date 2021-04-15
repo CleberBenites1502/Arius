@@ -1,0 +1,36 @@
+*{  margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: black;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.menu{
+    font:normal bolder 1em sans-serif;
+    background: rgba(13, 209, 243, 0.89);
+    text-transform: uppercase;
+    text-align: end;
+    width: 80%;
+    margin-top: 1%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.meiuca,.tema {
+    background-color: rgb(255, 255, 255);
+    margin-top: 1%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: 1px solid rgba(13, 209, 243, 0.89);
+    padding: 2%;
+}
+h1, h2, h3, p{
+    color: rgb(0, 0, 0);
+    line-height: 120%;
+
+    
+}
