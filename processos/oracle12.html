@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="../css/pg.css">
 </head>
 <body>
-    <div>
-        <h1 class="menu">Oracle 12c</h1>
+    <div class="menu">
+            <h1>Oracle 12c</h1>
     </div>
-        <section class="tema">
-        <h2> Comando salvador para rodar no cmd do Windows</h2>
+    <div class="tema">
+        <h2> Comando para rodar no cmd do Windows, quando insiste em não executar a instalação</h2>
         <h2>Lembrando que tem colocar client32 na pasta c:\arius para funcionar</h2>
-    </section>
-        <div class="meiuca">
-            <p> cmd 'abrir como administrador'</p>
-            <p>c:\arius\client32\install\oui.exe  -debug -ignoreprereq -j" -doracle.install.client.validate.clientsupportedoscheck=false"</p>
-            <p> 1 administrador | 2 ignorar | 3 próximo | 4 próximo | 5 c: arius   /procurar/ | obs no jeito personalizado clicar em 'oracle call interface' e 'oracle connection maneger' | 6 instalar | menu Windows |  oracle  | assistente conf de rede |
+    </div>
+    <div class="meiuca">
+            <p>1º cmd 'abrir como administrador'</p>
+            <p>c:\arius\client32\install\oui.exe  -debug -ignoreprereq -j" -doracle install.client.validate.clientsupportedoscheck=false"</p>
+            <h3>Instalação</h3>
+            <p> 1 administrador | 2 ignorar | 3 próximo | 4 próximo | 5 c: arius   /procurar/ | obs na forma personalizada, selecionar em 'oracle call interface' e 'oracle connection maneger' | 6 instalar
+            <h3>Assistente Oracle para conf. tsnames</h3>
+            <p>Menu Windows |  oracle | assistente conf de rede |<p>
             <p> 1 (2º opção) conf do novo servidor de rede local | 2 adicionar | 3 nome do serviço "arius" | 4 tcp | 5 ip do erp exemplo king 192.168.0.250  //próximo | 6 alterar log sim  /arius/automa | 7 sim testar | 8 arius   /ficar com arius mesmo não mexer | 9 não | 10 próximo | 11 finalizar</p>
-        </div>
-   
+    </div>
 </body>
 </html>

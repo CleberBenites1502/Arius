@@ -5,13 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etiqueta</title>
-    <link rel="stylesheet" href="processos.css">
+    <link rel="stylesheet" href="../css/pg.css">
 </head>
 <body>
-    <h1>Etiquetas</h1>
-    <h2>Configuração</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, illum provident. Delectus recusandae nisi temporibus quidem, sit tempora omnis? Libero porro aut ex quia quod illo provident voluptatum fuga consequuntur.</p>
+    <div class="menu">
+        <h1>Etiquetas</h1>
+    </div>
+    <div class="tema">
+        <h2>Configuração</h2>
+    </div>
+    <div class="meiuca">
+            <h3>Programa para emulador USB</h3> 
+            <p>
+            Instale e clique em **ASSING PORT**, deixará de apresentar erro e reconhecerá a impressora.
+            </p>
+            <h3>Configuração no Arius</h3>
+            <p>Em uma segunda máquina de etiquetas ou até mesmo em uma só
+            não colocar a empresa e estação
+            dispositivo: serial
+            EXEMPLO > porta com: COM4:
+            ESTAÇÕES - DETERMINAR O Nº DA ESTAÇÃO
+            cmd> ipconfig /all ipv4 192.168.1.169  então a estação é 169
+            Em cadastro de estações inserir o nº 169
+            </p>
+        
+            <h3>Acesso para salvar a conf. da etiqueta</h3>
+            A Arius colocou o seguinte
+            [path_comum]
+            escrita: yes depois volta pra no
+            com isso só reiniciar samba não precisa dar toda essa volta
+            mas tem que ter cuidado para não pegar virus
+        
+            service smb restart
+        
+            caso não de certo
+            reiniciar samba
+            service smb stop
+            service smb start
+            <h3>Teste impressão de etiqueta</h3>
+            <p>copy saidaA.etq com1 - depois deste comando impressora emiti a etiqueta</p>
+        
+        </p>
+    </div>
+    <div class="tema">
     <h2>Modelos</h2>
+    </div>
+    <div class="meiuca">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nulla ad, nesciunt exercitationem debitis atque sit, facere sint similique accusamus delectus molestiae obcaecati aut facilis eveniet illo dignissimos ipsum labore.</p>
+    </div>
 </body>
 </html>
