@@ -27,6 +27,7 @@ body{
     margin-left: 10%;
     border: 1px solid rgba(13, 209, 243, 0.89);
     padding: 2%;
+    text-align: justify;
 }
 p{
     font: normal 1em verdana, arial, sans-serif;
