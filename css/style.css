@@ -23,17 +23,24 @@ p{
     padding: 5px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.151);
 }
+.icone-baixar{
+    text-align:center;
+    margin: 35px 10px ;
+}
+.icone-baixar:hover {
+    transform: scale(1.2);
+}
 .baixar{
     color:red;
 }
 .baixar a:visited{
     color:rebeccapurple;
-
 }
 .meiuca{
     background-color: rgba(255, 255, 255, 0.87);
     margin: 1% 10%;
     width: 80%;
+    height: 90%;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #7e8583;
     padding: 2%;
@@ -43,7 +50,7 @@ p{
     font:normal bolder 1em sans-serif;
     background: rgba(13, 209, 243, 0.89);
     text-transform: uppercase;
-    text-align: end;
+    text-align: center;
     width: 80%;
     margin: 1% 10%;
     padding: 2%;
