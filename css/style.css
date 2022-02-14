@@ -2,7 +2,6 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    color: black;
 }
 body{
     background-image: url(background.jpg);
@@ -12,7 +11,6 @@ h1{
     font: italic normal 3em arial, verdana, sans-serif;
 }
 h2{
-    font-size: 1.5em;
     font: normal lighter 1em arial, verdana, sans-serif;
     text-align: justify;
     margin: 25px 30px 10px 20px;
@@ -28,7 +26,8 @@ p{
     margin: 35px 10px ;
 }
 .icone-baixar:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
+    transition: .6s;
 }
 .baixar{
     color:red;
@@ -37,10 +36,9 @@ p{
     color:rebeccapurple;
 }
 .meiuca{
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: rgba(255, 255, 255, 0.87); 
     margin: 1% 10%;
     width: 80%;
-    height: 90%;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #7e8583;
     padding: 2%;
@@ -65,7 +63,12 @@ p{
 .menu li a:hover{
     color: white;
 }
-.programas a{color:yellow;} .processos a{ color:yellow;} .pdf a{color:yellow;} .videos a{color:yellow;} .sql a{ color:yellow}
-
-
-
+.programas a{color:yellow;} .processos a{ color:yellow;} .pdf a{color:yellow;} .videos a{color:yellow;} .sql a{ color:yellow
+}
+footer.rodape{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5em ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(184, 173, 30);
+}

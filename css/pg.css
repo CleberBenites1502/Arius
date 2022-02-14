@@ -31,7 +31,6 @@ body{
 }
 p{
     font: normal 1em verdana, arial, sans-serif;
-    color: rgb(0, 0, 0);
     line-height: 120%;
 }
 h1, h2{
@@ -40,5 +39,11 @@ h1, h2{
 h3{
     font: normal bold 1em verdana;
     line-height: 200%;
-
+}
+footer.rodape{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5em ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(184, 173, 30);
 }
