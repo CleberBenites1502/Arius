@@ -40,10 +40,7 @@ h3{
     font: normal bold 1em verdana;
     line-height: 200%;
 }
-footer.rodape{
-    position: absolute;
-    bottom: 0;
-    font-size: 1.5em ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(184, 173, 30);
+img{
+    width: 90px;
+    height: 50px;
 }

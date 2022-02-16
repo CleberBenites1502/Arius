@@ -2,6 +2,9 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    color:black;
+}
+    
 }
 body{
     background-image: url(background.jpg);
@@ -64,11 +67,4 @@ p{
     color: white;
 }
 .programas a{color:yellow;} .processos a{ color:yellow;} .pdf a{color:yellow;} .videos a{color:yellow;} .sql a{ color:yellow
-}
-footer.rodape{
-    position: absolute;
-    bottom: 0;
-    font-size: 1.5em ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(184, 173, 30);
 }
