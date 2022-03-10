@@ -2,7 +2,8 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-}
+    color:black;
+}    
 body{
     background-image: url(background.jpg);
     background-repeat:repeat-y;
@@ -39,6 +40,7 @@ p{
     background-color: rgba(255, 255, 255, 0.87); 
     margin: 1% 10%;
     width: 80%;
+    height: 100%;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #7e8583;
     padding: 2%;
@@ -46,7 +48,7 @@ p{
 }
 .menu{
     font:normal bolder 1em sans-serif;
-    background: rgba(13, 209, 243, 0.89);
+    background: rgba(82, 113, 119, 0.89);
     text-transform: uppercase;
     text-align:center;
     width: 80%;
@@ -64,11 +66,4 @@ p{
     color: white;
 }
 .programas a{color:yellow;} .processos a{ color:yellow;} .pdf a{color:yellow;} .videos a{color:yellow;} .sql a{ color:yellow
-}
-footer.rodape{
-    position: absolute;
-    bottom: 0;
-    font-size: 1.5em ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(184, 173, 30);
 }
