@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pg.css">
+    <title>Integração PDV</title>
+</head>
+<body>
+    <div class="menu"><h1>Tabelas que envolvem a integração Retaguardo X Frente de loja </h1></div>
+    <div class="tema">
+        <h2>Select feito pelo Frente de Loja KW</h2></div>
+    <div class="meiuca">
+    <p><code>M_COD_LOJA,CADM_COD_INTERNO,CADM_COD_EAN,CADM_DESCRICAO,CADM_DESCR_LONGA,CADM_UNIDADE,CADM_TRIBUTACAO,CADM_PRECO_VENDA*100 AS CADM_PRECO_VENDA,CADM_PRECO_OFERTA*100 AS</code></p>
+             <p><code>CADM_PRECO_OFERTA,CADM_PRECO_PLU2*100 AS CADM_PRECO_PLU2,CADM_PRECO_PLU3*100 AS CADM_PRECO_PLU3,CADM_PRECO_PLU4*100 AS CADM_PRECO_PLU4,CADM_PRECO_PLU5*100 AS CADM_PRECO_PLU5,</code></p>
+             <p><code>CADM_PRECO_CUSTO*100 AS CADM_PRECO_CUSTO,CADM_PMC*100 AS CADM_PMC,CADM_DATA_ALTERACAO,CADM_COD_FORNECEDOR,CADM_SECAO,CADM_GRUPO,CADM_SUBGRUPO,CADM_SETOR,CADM_FLAG_PESO,</code></p>
+             <p><code>CADM_IMPRIME_ETIQUETA,CADM_MARCA_PROPRIA,CADM_EAN_EMBALAGEM,CADM_QTD_EMBALAGEM,CADM_VALIDADE,CADM_VENDA_FRACIONADA,CADM_ORIGEM,CADM_NCM,CADM_CEST,CADM_EXTIPI,CADM_FLAG_VASILHAME,</code></p>
+             <p><code>CADM_COD_VASIL,CADM_PERMITE_MULTIPLICADOR,CADM_RESTRICAO_VENDA,CADM_MAX_MULTIPLICADOR,CADM_QTD_MAX_VENDA,CADM_ALIQ_ICMS*100 AS CADM_ALIQ_ICMS,CADM_ALIQ_ORIGINAL*100 AS </code></p>
+             <p><code>CADM_ALIQ_ORIGINAL,CADM_CST_PIS,CADM_PERC_PIS*100 AS CADM_PERC_PIS,CADM_PERC_COFINS*100 AS CADM_PERC_COFINS,CADM_TIPO_PONTOS_FIDELIDADE,CADM_PONTOS_FIDELIDADE*10000 AS </code></p>
+             <p><code>CADM_PONTOS_FIDELIDADE,CADM_COD_REFERENCIA,CADM_OPERACAO_REG,CADM_RECEITA,CADM_PERMITE_DESC,CADM_PARTICIPA_PROMO,CADM_TICKET_VINCULADO,CADM_ANTI_FURTO,CADM_COD_ASSOCIADO,</code></p>
+             <p><code>ADM_CBASICA,CADM_VALIDA_GTIN,CADM_ALIQ_FCP*100 AS CADM_ALIQ_FCP, CADM_CBENEF,'END' FROM VND_VS_CARGA_PRODUTOS WHERE CADM_COD_LOJA = 1  ORDER BY CADM_COD_INTERNO,CADM_QTD_EMBALAGEM</code></p>
+    </div>
+    <div class="tema">
+    <h2>Select das tabelas que precisam conter informações no banco de dados</h2></div>
+    <div class="meiuca">        
+        <p><code>select * from vnd_vs_carga_produtos where cadm_cod_ean=3; --tabela de integração Arius frente de loja</code></p>
+        <p><code>select * from vw_produtos_pdv_gz where id=3 order by politica;</code></p>
+        <p><code>select * from vw_produtos_precos_alterados where produto=3 for update;</code></p>
+        <p><code>select * from alteracao_precos where produto=4 and politica=1 for update; --tabela que se não estiver <> de zero, não popula o frente de loja</code></p>
+    </div>
+</body>
+</html>
+<code></code>
