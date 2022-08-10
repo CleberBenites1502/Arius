@@ -12,8 +12,19 @@
     <div class="tema"><h2>SELECT</h2></div>
     <div class="meiuca">
     <p>LIKE NA CONFIGURAÇÃO</p>
-    <p><code>select * from bas_vi_configuracoes_valor where upper (descricao_campo) like '%APLICA%';</code></p>
-    <p><code>Tabela ERP confgbl</code></p>
+    <p><code>> select * from bas_vi_configuracoes_valor where upper (descricao_campo) like '%APLICA%';</code></p>
+    <p><code>Tabela ERP confgbl</code></p><br>
+    <p>Retira transportadora do lçto de lote</p>
+    <p><code>> select * from lote_transf where nf=19299 order by datahora_alteracao desc for update; 
+        --- apagar transportadora no lote de transferencia no DELPHI.</code></p>
+    <p><code>> select * from fis_t_c160 where id_c100= 18652(lçto fiscal) for update;
+        --- apagar transportadora dentro do lçto fiscal, deletar a linha inteira.</code></p>
+    <p><code>> alter table fis_t_c100 disable all triggers;
+        update fis_t_c100 set ind_frt=9 where  id_c100 in ( select id_c100 from fis_t_c100 where id_empresa_a = 1 
+        and num_doc in ( 19299,19289,19290 ###notas fiscais ) );
+        commit;
+        alter table fis_t_c100 enable all triggers;
+        -- rodar complemento</code></p>
     </div>
 </body>
 </html>
