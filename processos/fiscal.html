@@ -11,6 +11,18 @@
     <div class="menu"><h1>Fiscal</h1></div>
     <div class="tema"><h2>Cadastro de Produtos com Tributação Separada</h2></div>
     <div class="tema"><p>Configuração para retirar a critica de não preenchimento da aliquota de ICMS e demais informções, observação: o PIS/COFINS continua sendo obrigatório para salvar a tela </p></br>
-        <img src="imagens_fiscal/imagem1.png" alt=""></div>
+    <img src="imagens_fiscal/imagem1.png" alt=""></div>
+    <div class="tema"><h2>Cadastro de Produtos com Tributação Separada</h2></div>
+        <div class="tema"><p>Processa vendas com erro de aliquota não cadastrada</p></br>
+        <p>select sum(v.valor_total_liquido), data from vnd_t_vendas v where data >='07/08/2022' and data <= '22/08/2022' and v.cancelado='F' group by data order by data; </p>
+        <p>select * from vnd_t_vendas_itens where aliquota=24 and coo=23539 and pdv=105;</p>
+        <p>update vnd_t_vendas_itens set aliquota=25 where aliquota=24 and data>='07/08/2022' and data<='22/08/2022';</p>
+        <p>update vnd_t_vendas_itens set aliquota=17 where aliquota=16 and data>='07/08/2022' and data<='22/08/2022';</p>
+        <p>update vnd_t_vendas_itens set aliquota=12 where aliquota=11 and data>='07/08/2022' and data<='22/08/2022';</p>
+        <p>commit;</p>
+    
+   
+    
+        
 </body>
 </html>
